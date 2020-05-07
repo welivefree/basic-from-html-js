@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: lightgreen;
+
+}
+
+input {
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.button {
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #e51;
+}
+
+form { 
+	width: 480px; 
+	margin: auto; 
+	border-radius: 5px;  
+	box-shadow: 5px 5px 2px #888;
+}
