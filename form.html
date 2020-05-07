@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("name").value;
+    }
+  </script>
+  </head>
+  
+    <head>
+        <title>Assignment</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        <form method="post" target="#">
+        <h1>Assignment</h1>
+        <div id="printableArea">
+         <select  type="multiple" id="title">
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Ms.</option>
+         </select>  <br /><br />
+      	Name<br>
+      	<input type="text" name="name" id="name"><br>
+        Email<br>
+	<input type="text" name="email" id="email"><br>
+        Phone No <br>
+      	<input type="tel" name="phone" id="phone" title="Must contain at least 10 numbers" required><br>
+        Create a password<br>
+	<input type="password" name="pass" id="pass" onkeyup="validatePassword(); return false;" title="Must contain at least 6 characters" required><br>
+        Address<br> 
+	<input type="text" name="address" id="add"><br>
+            
+      	<div class="button">
+         <input type="button" onclick="printDiv('printableArea')" value="print" />
+        </div>
+    </div>    
+	</form>
+</body>
+</html>
